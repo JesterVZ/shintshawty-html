@@ -1,0 +1,113 @@
+<link rel="stylesheet" href="css/page.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    </style>
+<form class="order">
+    
+    <div class="order__region title">
+        1. Регион доставки
+    </div>
+    <div class="order__city subtitle">
+        Город
+    </div>
+    <input type="text" class="order__city__input" placeholder="Москва, Россия"></input>
+
+    <div class="order__index subtitle">
+        Индекс
+    </div>
+    <input type="text" class="order__city__input" placeholder="614025"></input>
+
+    <div class="line"></div>
+
+
+    <div class="order__buyer title">
+        2. Покупатель
+    </div>
+    <div class="order__full_name subtitle">
+        ФИО
+    </div>
+    <input type="text" class="order__full_name__input" placeholder="Иванов Иван Иванович"></input>
+
+    <div class="order__mail subtitle">
+        Email
+    </div>
+    <input type="mail" class="order__mail__input" placeholder="example@gmail.com"></input>
+
+    <div class="order__phone subtitle">
+        Телефон
+    </div>
+    <input type="phone" class="order__phone__input" placeholder="+7(000)-000-00-00"></input>
+    
+    <div class="line"></div>
+
+    
+
+    <div class="order__address title">
+        3. Адрес
+    </div>
+    <div class="order__street subtitle">
+        Улица
+    </div>
+    <input type="text" class="order__street__input" placeholder="Ленина"></input>
+
+    <div class="order__house subtitle">
+        Дом
+    </div>
+    <input type="mail" class="order__house__input" placeholder="9"></input>
+
+    <div class="order__flat subtitle">
+        Квартира
+    </div>
+    <input type="phone" class="order__flat__input" placeholder="228"></input>
+    
+    <div class="line"></div>
+
+
+
+    <div class="delivery_title title">
+        4. Доставка
+    </div>
+    <div class="checker delivery">
+            
+        <label for="delivery" class="">
+            <input id="courier" type="radio" value="courier" name="delivery">
+        Доставка курьером</label>
+
+        <label for="delivery">
+            <input id="pickup" type="radio" value="pickup" name="delivery">
+        Самовывоз</label>
+
+    </div>
+    
+    <div class="pay_title title">
+        5. Оплата
+    </div>
+    <div class="checker pay">
+        <label for="card">
+            <input id="card" type="radio" value="card" name="pay">    
+        Банковские карты
+        </label>
+                
+        <label for="cash">
+            <input id="cash" type="radio" value="cash" name="pay">
+        Наличными курьерами</label>
+    </div>
+    <div card_logo>
+        <img src="img/Mastercard-logo 2.png" alt="#" class="logo_mastercard">
+        <img src="img/Visa_Inc._logo 2.png" alt="#" class="logo_visa">
+        <img src="img/Mir-logo.SVG 2.png" alt="#" class="logo_mir">
+    </div>
+    
+
+
+
+
+
+    <div class="comment_title title">
+        6. Комментарий к заказу
+    </div>
+    <input type="text" class="order__comment__input" placeholder="Комментарий"></input>
+
+    <input type="submit" class="send" value="Оформить заказ"></input>
+</form>
+
