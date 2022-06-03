@@ -1,8 +1,8 @@
 .order{
-    /*убрать */
-    width: 1279px;
+    width: 1279px; /*убрать ширину */
     margin: auto;
     font-family: 'Inter';
+    font-style: normal;
     display: flex;
     flex-direction: column;
     
@@ -14,7 +14,7 @@
     font-weight: 400;
     font-size: 32px;
     line-height: 39px;
-    
+
 }
 
 
@@ -28,9 +28,6 @@
     
 }
 
-
-
-
 .order .line{
     height: 65px;
     border-bottom: 1px solid #959595;
@@ -41,14 +38,13 @@
     
 }
 
-
-.order input{
+.order .normal_input{
     border: 2px solid #929292;
     border-radius: 8px;
     width: 100%;
     font-size: 16px;
     padding: 12px 25px;
-    /* height: 53px; */
+    /* border: 2px solid green; */
 }
 
 .checker{
@@ -100,3 +96,109 @@
     width: max-content;
     align-self: flex-end;
 }
+
+/* кастомные чекеры */
+.delivery{
+    display: flex;
+    flex-direction: column;
+}
+
+.checker{
+    padding-top: 45px;
+    font-size: 32px;
+}
+
+  
+  .l-radio {
+    padding: 6px;
+    border-radius: 50px;
+    display: inline-flex;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    margin: 8px 0;
+    -webkit-tap-highlight-color: transparent;
+    
+    align-items: center;
+
+  }
+  .checker span{
+    margin-left: 30px;
+    /* border: 2px solid green; */
+  }
+
+  .l-radio:hover, .l-radio:focus-within {
+    /* background: rgba(159, 159, 159, 0.1); */
+  }
+  .l-radio input {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: none;
+    border: 0;
+    box-shadow: inset 0 0 0 1px #9F9F9F;
+    box-shadow: inset 0 0 0 1.5px #9F9F9F;
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    transition: box-shadow 150ms cubic-bezier(0.95, 0.15, 0.5, 1.25);
+    pointer-events: none;
+
+
+  }
+  .l-radio input:focus {
+    outline: none;
+  }
+  .l-radio input:checked {
+    box-shadow: inset 0 0 0 13px #000000;
+  }
+  .l-radio span {
+    vertical-align: middle;
+    /* display: inline-block; */
+    line-height: 20px;
+    padding: 0 8px;
+  }
+  textarea{
+    margin-top: 75px;
+    padding: 27px 25px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    border-radius: 8px;
+    border: 2px solid #929292;
+
+    font-family: 'Inter';
+    font-style: normal;
+  }
+
+  .custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  .custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+
+
+
+  .send{
+      margin-top: 85px;
+  }
