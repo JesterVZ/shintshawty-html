@@ -1,0 +1,74 @@
+.header *{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    /*убрать ширину */
+    /* width: 1279px;  */
+    /* margin: auto;  */
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.logo img{
+    
+    order: 2px solid green;
+    height: 80px;
+}
+.main_menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu_catalog{
+    /* position: absolute; */
+    margin-right: 20px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 20px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+.menu_catalog img{
+    margin-right: 20px;
+}
+
+
+.menu_search{
+    border: 2px solid #929292;
+    border-radius: 8px;
+    padding: 8px 15px;
+    /*убрать ширину */
+    width: 1279px;
+   
+}
+
+.menu_search input{
+    border: none;
+    font-size: 24px;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-items: center; */
+    /* flex-grow: 1; */
+}
+/* не знаю как рамку убрать */
+.menu_search input:focus{
+    border: none;
+
+}
+
+.favorites{
+    margin-left: 16px;
+}
+
+.cart{
+    margin-left: 32px;
+}
+.profile{
+    margin-left: 28px;
+}

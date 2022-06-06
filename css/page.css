@@ -5,7 +5,6 @@
     font-style: normal;
     display: flex;
     flex-direction: column;
-    
 }
 
 .order .title{
@@ -14,9 +13,7 @@
     font-weight: 400;
     font-size: 32px;
     line-height: 39px;
-
 }
-
 
 .order .subtitle{
     padding-top: 40px;
@@ -25,7 +22,6 @@
     font-weight: 400;
     font-size: 32px;
     line-height: 39px;
-    
 }
 
 .order .line{
@@ -35,7 +31,6 @@
 
 .order .delivery{
     display: flex;
-    
 }
 
 .order .normal_input{
@@ -44,7 +39,7 @@
     width: 100%;
     font-size: 16px;
     padding: 12px 25px;
-    /* border: 2px solid green; */
+
 }
 
 .checker{
@@ -57,13 +52,8 @@
     /* border: 2px solid green; */
     padding-top: 40px;
     width: 50%;
-
-
     display: flex;
     flex-direction: row;
-    
-    /* align-items: flex-start; */
-    /* align-content: flex-start; */
 }
 
 .logo_mastercard{
@@ -199,6 +189,84 @@
 
 
 
-  .send{
-      margin-top: 85px;
-  }
+/* --------чек бокс --------------*/
+
+ 
+.politics {
+  margin-top: 75px;
+  display: block;
+  position: relative;
+  padding-left: 90px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-family: 'Inter';
+  font-style: normal;
+  font-size: 32px;
+  
+}
+.politics input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* изначальный цвет */
+.politics__indicator {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  height: 35px;
+  width: 35px;
+  background: #ffffff;
+  border: 4px solid rgb(0, 0, 0);
+  border-radius: 8px;
+}
+/* цвет ховера */
+.politics:hover input ~ .politics__indicator,
+.politics input:focus ~ .politics__indicator {
+  background: rgb(216, 216, 216);
+}
+.politics input:checked ~ .politics__indicator {
+  background: #ffffff;
+}
+.politics:hover input:not([disabled]):checked ~ .politics__indicator,
+.politics input:checked:focus ~ .politics__indicator {
+  background: #000000;
+}
+
+
+.politics__indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+  
+}
+.politics input:checked ~ .politics__indicator:after {
+  display: block;
+}
+
+/* отрисовка стрелки */
+.politics--checkbox .politics__indicator:after {
+  left: 13px;
+  top: 6px;
+  width: 5px;
+  height: 15px;
+  border: solid rgb(255, 255, 255);
+  border-width: 0 4px 4px 0;
+  transform: rotate(45deg);
+  
+}
+
+
+
+/* кнока отправить */
+.send{
+  margin-top: 85px;
+  margin-bottom: 155px;
+  padding: 2px 28px;
+  border-radius: 8px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-size: 32px;
+  
+}
